@@ -10,13 +10,13 @@ class Directory extends Component {
     search: "",
   };
   //===========================================================
-  compomentDidMount() {
-    API.search().then(res) => {
+  componentDidMount() {
+    API.search().then((res) => {
       this.setState({
         employeeAlpha: res.data.results,
         employeeZeta: res.data.results,
       });
-    };
+    });
   }
   //===========================================================
   handleInputChange =(event) => {
@@ -28,7 +28,7 @@ class Directory extends Component {
     //===========================================================
     const empFilter = this.state.employeeZeta.filter((employee) => {
       return(
-        employee.name.first.toLowerCase().includes(value.toLowerCase() || 
+        employee.name.first.toLowerCase().includes(value.toLowerCase()) || 
         employee.name.last.toLowerCase().includes(value.toLowerCase()
       );
     });
