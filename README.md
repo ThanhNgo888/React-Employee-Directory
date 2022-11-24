@@ -20,6 +20,9 @@
   ```
   npm axios
   ```
+  ```
+  npm i bootstrap
+  ```  
   <hr>
 
   ## Usage
