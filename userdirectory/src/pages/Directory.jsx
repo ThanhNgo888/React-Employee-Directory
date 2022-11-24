@@ -19,5 +19,29 @@ class Directory extends Component {
     };
   }
   //===========================================================
+  handleInputChange =(event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({
+      [name]: value,
+    });
+    //===========================================================
+    const empFilter = this.state.employeeZeta.filter((employee) => {
+      return(
+        employee.name.first.toLowerCase().includes(value.toLowerCase() || 
+        employee.name.last.toLowerCase().includes(value.toLowerCase()
+      );
+    });
+    this.setState({ employeeAlpha: empFilter});
+  };
+  //===========================================================
+  handleSearch = (event) => {
+    event.preventDefault();
+    const empSearch = event.target.value;
+    this.setState({
+      search: empSearch,
+    });
+  };
+  //===========================================================
   
 }
