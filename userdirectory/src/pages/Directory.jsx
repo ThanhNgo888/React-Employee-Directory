@@ -43,5 +43,33 @@ class Directory extends Component {
     });
   };
   //===========================================================
-  
+  handldeToggle = () => {
+     const empSort = this.state.employeeAlpha.sort((a,b) => {
+      return a.name.first.localCompare(b.name.first);
+     });
+     //===========================================================
+     this.setState({
+      employeeAlpha: empSort,
+     }); 
+  };
+  //===========================================================
+  render(){
+    return(
+      <div>
+        <hr></hr>
+        <Form
+        search={this.state.search}
+          handleInputChange={this.handleInputChange}
+          handleSearch={this.handleSearch}
+        />
+        <Table
+          employeeList={this.state.employeeAlpha}
+          search={this.handleSearch}
+          handleToggle={this.handleToggle}
+        />
+      </div>
+    );
+  }
 }
+export default Directory;
+    
