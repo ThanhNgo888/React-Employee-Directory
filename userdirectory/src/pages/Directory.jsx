@@ -29,7 +29,7 @@ class Directory extends Component {
     const empFilter = this.state.employeeZeta.filter((employee) => {
       return(
         employee.name.first.toLowerCase().includes(value.toLowerCase()) || 
-        employee.name.last.toLowerCase().includes(value.toLowerCase()
+        employee.name.last.toLowerCase().includes(value.toLowerCase())
       );
     });
     this.setState({ employeeAlpha: empFilter});
