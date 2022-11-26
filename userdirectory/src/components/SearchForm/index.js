@@ -1,6 +1,6 @@
 import React from "react";
 
-function Form(props) {
+function SearchForm(props) {
   return (
     <div className="row justify-content-center">
       <div className="row bg-dark">
@@ -26,4 +26,4 @@ function Form(props) {
   );
 }
 
-export default Form;
+export default SearchForm;

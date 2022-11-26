@@ -16,9 +16,9 @@
   To start using this code follow these instructions
   ```
   npm i
-  ```  
-  ```
+  cd userdirectory
   npm axios
+  npm start
   ```
   <hr>
 
@@ -29,15 +29,16 @@
 
   `Once the page is loaded the employees are displayed randomly in a non-specific order:`
 
-  ![LoadedPage](img/DirectorBasic.png)
+  <!-- ![LoadedPage](/img/DirectorSearch.png) -->
+  ![LoadedPage](/userdirectory/img/DirectorBasic.png)
 
   `Employees can be searched using the search bar returning either a single employee or multiple based on the search query:`
 
-  ![Searched](img/DirectorSearch.png)
+  ![Searched](/userdirectory/img/DirectorSearch.png)
 
   `The results search as well as the default load page can be sorted alphabetically by clicking the Name dropdown:`
 
-  ![Sort](img/DirectorSrchSort.png)
+  ![Sort](/userdirectory/img/DirectorSrchSort.png)
 
   # Use the link provided below to take you the gh-pages launched application.
   [React User Directory](https://github.com/ThanhNgo888/React-Employee-Directory)

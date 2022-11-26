@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Form from "../components/Form/index";
-import Table from "../components/Table/index";
+import SearchForm from "../components/SearchForm/index";
+import EmployeeTable from "../components/EmployeeTable/index";
 import API from "../utils/API";
 
 class Directory extends Component {
@@ -59,12 +59,12 @@ class Directory extends Component {
     return (
       <div>
         <hr></hr>
-        <Form
+        <SearchForm
           search={this.state.search}
           handleInputChange={this.handleInputChange}
           handleSearch={this.handleSearch}
         />
-        <Table
+        <EmployeeTable
           employeeList={this.state.employeeAlpha}
           search={this.handleSearch}
           handleToggle={this.handleToggle}
