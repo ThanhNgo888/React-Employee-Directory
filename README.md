@@ -16,7 +16,6 @@
   To start using this code follow these instructions
   ```
   npm i
-  cd userdirectory
   npm axios
   npm start
   ```
